@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "skipLibCheck": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@src/*": ["./src/server/*"]
+    },
+    "useUnknownInCatchVariables": false,
+    "types": ["vitest/globals"]
+  },
+  "ts-node": {
+    "swc": true,
+    "require": ["tsconfig-paths/register", "./config.ts"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "config.ts",
+    "scripts",
+    "eslint.config.ts",
+    "vitest.config.ts"
+  ],
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

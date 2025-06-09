@@ -37,12 +37,12 @@ if (ENV.NodeEnv === NodeEnvs.Production) {
   }
 }
 app.use(
-  Paths.Base,
+  Paths.Admin.Base,
   express.static(path.resolve(process.cwd(), 'dist/client/browser'))
 );
 
 // Add APIs, must be after middleware
-app.use(Paths.Base, AdminRouter);
+app.use(Paths.Admin.Base, AdminRouter);
 
 // Add error handler
 app.use((err: Error, _: Request, res: Response, next: NextFunction) => {

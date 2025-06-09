@@ -1,11 +1,12 @@
-
 export default {
-  Base: '/admin',
+  base: '/:linkId',
   Admin: {
-    Base: '/api',
-    Get: '/all',
-    Add: '/add',
-    Update: '/update',
-    Delete: '/delete/:id',
+    Base: '/admin',
+    Api: {
+      Get: '/all',
+      Add: '/add',
+      Update: '/update',
+      Delete: '/delete/:id',
+    },
   },
 } as const;

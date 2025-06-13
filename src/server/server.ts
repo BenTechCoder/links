@@ -38,7 +38,7 @@ if (ENV.NodeEnv === NodeEnvs.Production) {
 }
 app.use(
   Paths.Admin.Base,
-  express.static(path.resolve(process.cwd(), 'dist/client/browser'))
+  express.static(path.resolve(process.cwd(), 'dist/client/browser')),
 );
 
 // Add APIs, must be after middleware

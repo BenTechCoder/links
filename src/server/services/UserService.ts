@@ -1,14 +1,14 @@
-import { RouteError } from "@src/common/util/route-errors";
-import HttpStatusCodes from "@src/common/constants/HttpStatusCodes";
+import { RouteError } from '@src/common/util/route-errors';
+import HttpStatusCodes from '@src/common/constants/HttpStatusCodes';
 
-import UserRepo from "@src/repos/UserRepo";
-import { IUser } from "@src/models/User";
+import UserRepo from '@src/repos/UserRepo';
+import { IUser } from '@src/models/User';
 
 /******************************************************************************
                                 Constants
 ******************************************************************************/
 
-export const USER_NOT_FOUND_ERR = "User not found";
+export const USER_NOT_FOUND_ERR = 'User not found';
 
 /******************************************************************************
                                 Functions
